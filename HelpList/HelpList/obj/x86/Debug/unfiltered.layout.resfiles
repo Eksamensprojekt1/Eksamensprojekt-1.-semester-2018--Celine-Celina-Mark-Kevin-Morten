@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\classroom.jpg
+Assets\HL-logo.png
 Assets\LockScreenLogo.scale-200.png
 Assets\logoHL-1.PNG
 Assets\logoHL-2.PNG
@@ -15,6 +16,8 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 HelpList.xr.xml
 View\CreatePageAdmin.xbf
+View\HelpListStudent.xbf
+View\HelpListTeacher.xbf
 View\HomePageAdmin.xbf
 View\HomePageStudent.xbf
 View\HomePageTeacher.xbf
