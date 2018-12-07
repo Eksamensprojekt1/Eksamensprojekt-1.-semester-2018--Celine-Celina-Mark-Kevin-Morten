@@ -379,6 +379,12 @@
     <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\classroom.jpg">
       <PackagePath>Assets\classroom.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\HL-logo.png">
+      <PackagePath>Assets\HL-logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-1.PNG">
       <PackagePath>Assets\logoHL-1.PNG</PackagePath>
     </AppxPackagedFile>
@@ -393,6 +399,30 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-5.PNG">
       <PackagePath>Assets\logoHL-5.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
