@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.ApplicationModel.Background;
-using HelpList.ViewModel;
 
 namespace HelpList.Model
 {
@@ -16,7 +10,7 @@ namespace HelpList.Model
         private string _location;
         private string _description;
         private DateTime _date;
-        private int _number;
+        //private int _number;
         #endregion
 
         #region Constructor
