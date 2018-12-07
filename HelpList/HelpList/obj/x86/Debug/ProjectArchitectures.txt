@@ -1,1 +1,1 @@
-C:\Users\cecce\Downloads\HelpList\HelpList\HelpList.csproj;x86
+C:\Users\Morte\Source\Repos\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten2\HelpList\HelpList\HelpList.csproj;x86

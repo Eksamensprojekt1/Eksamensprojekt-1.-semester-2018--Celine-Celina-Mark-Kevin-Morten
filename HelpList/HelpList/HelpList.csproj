@@ -99,6 +99,7 @@
     <Compile Include="Model\ClassCollection.cs" />
     <Compile Include="Model\ClassObject.cs" />
     <Compile Include="Model\Problem.cs" />
+    <Compile Include="Model\ProblemMappe.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\StudentClass.cs" />
     <Compile Include="Model\StudentCollection.cs" />
@@ -148,11 +149,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\classroom.jpg" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\logoHL-1.PNG" />
     <Content Include="Assets\logoHL-2.PNG" />
     <Content Include="Assets\logoHL-3.PNG" />
     <Content Include="Assets\logoHL-4.PNG" />
     <Content Include="Assets\logoHL-5.PNG" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
