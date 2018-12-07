@@ -76,9 +76,9 @@ namespace HelpList.Model
         {
             CC = new ObservableCollection<ClassObject>
             {
-                new ClassObject("1a", "D2.7"),
-                new ClassObject("1b", "D2.12"),
-                new ClassObject("1c", "D3.5")
+                new ClassObject("1a", "Room 1"),
+                new ClassObject("1b", "Room 2"),
+                new ClassObject("1c", "Room 3")
             };
 
             _newClass = new ClassObject();
