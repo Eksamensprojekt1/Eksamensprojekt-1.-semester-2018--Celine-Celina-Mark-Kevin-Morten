@@ -15,67 +15,153 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
 
-        <Grid Grid.Column="0" HorizontalAlignment="Center">
+        <Grid
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Margin="0,50,0,0"
+            HorizontalAlignment="Center">
 
             <RelativePanel>
                 <TextBox
                     x:Name="Classname"
-                    Width="200"
+                    Width="240"
+                    FontSize="15"
                     Header="Classname"
                     Text="{Binding ClassName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBox
                     x:Name="Classroom"
-                    Width="200"
+                    Width="240"
+                    Margin="0,20,0,0"
+                    FontSize="15"
                     Header="Classroom"
                     RelativePanel.Below="Classname"
                     Text="{Binding ClassRoom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                 <Button
                     x:Name="add"
-                    Width="80"
+                    Width="100"
                     Height="34"
                     Margin="10"
                     Background="DarkBlue"
                     Command="{Binding AddCommand, Mode=TwoWay}"
                     Content="Create"
                     Foreground="White"
-                    RelativePanel.Below="Classroom" />
+                    RelativePanel.Below="combo1" />
                 <Button
-                    Width="80"
+                    Width="100"
                     Height="34"
                     Margin="10"
                     Background="DarkRed"
                     Command="{Binding DeleteCommand, Mode=TwoWay}"
                     Content="Delete"
                     Foreground="White"
-                    RelativePanel.Below="Classroom"
+                    RelativePanel.Below="combo1"
                     RelativePanel.RightOf="add" />
+                <ComboBox
+                    x:Name="combo1"
+                    Width="240"
+                    Height="Auto"
+                    Margin="0,20,0,0"
+                    PlaceholderText="Select Students"
+                    RelativePanel.Below="combo2">
 
+                    <TextBlock Text="Bob B." />
+                    <TextBlock Text="Jens J." />
+                    <TextBlock Text="Harry P." />
+                    <TextBlock Text="Pippi L." />
+                    <TextBlock Text="Sonja O." />
+                    <TextBlock Text="Lene E." />
+                </ComboBox>
+                <ComboBox
+                    x:Name="combo2"
+                    Width="240"
+                    Height="Auto"
+                    Margin="0,20,0,0"
+                    PlaceholderText="Select Teachers"
+                    RelativePanel.Below="Classroom">
+
+                    <TextBlock Text="Bob B." />
+                    <TextBlock Text="Jens J." />
+                    <TextBlock Text="Harry P." />
+                    <TextBlock Text="Pippi L." />
+                    <TextBlock Text="Sonja O." />
+                    <TextBlock Text="Lene E." />
+                </ComboBox>
             </RelativePanel>
         </Grid>
 
-
+        <StackPanel
+            Grid.Column="1"
+            Width="Auto"
+            Margin="-20,50,0,0"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBlock
+                Grid.Column="0"
+                Width="Auto"
+                Margin="0,0,50,0"
+                HorizontalAlignment="Center"
+                FontSize="24"
+                Text="Class" />
+            <TextBlock
+                Grid.Column="1"
+                Margin="50,0,0,0"
+                HorizontalAlignment="Center"
+                FontSize="24"
+                Text="Room" />
+        </StackPanel>
 
         <ListView
+            Grid.RowSpan="2"
             Grid.Column="1"
+            Margin="0,90,0,0"
             HorizontalAlignment="Center"
             ItemsSource="{Binding CC, Mode=TwoWay}"
             SelectedItem="{Binding SelectedClass, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock
-                            FontSize="20"
-                            Foreground="Black"
-                            Text="{Binding ClassName, Mode=OneWay}" />
-                        <TextBlock Text="{Binding ClassRoom}" />
-                        <TextBlock Text="{Binding ClassName}" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border
+                            Width="400"
+                            BorderBrush="DarkBlue"
+                            BorderThickness="2">
 
-                    </StackPanel>
+                            <RelativePanel>
+
+                                <TextBlock
+                                    x:Name="firstname"
+                                    Grid.Column="0"
+                                    Margin="50,0,70,0"
+                                    FontSize="20"
+                                    Text="{Binding ClassName, Mode=OneWay}" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="70,0,50,0"
+                                    FontSize="20"
+                                    RelativePanel.RightOf="firstname"
+                                    Text="{Binding ClassRoom}" />
+
+                            </RelativePanel>
+                        </Border>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

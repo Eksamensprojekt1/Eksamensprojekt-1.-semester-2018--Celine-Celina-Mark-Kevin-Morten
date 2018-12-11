@@ -13,15 +13,14 @@
     <RootPropertyPathName Name="RemoveAllCommand" />
     <RootPropertyPathName Name="CC" />
     <RootPropertyPathName Name="SelectedClass" />
-    <RootPropertyPathName Name="ClassName" />
     <RootPropertyPathName Name="ClassRoom" />
+    <RootPropertyPathName Name="ClassName" />
     <RootPropertyPathName Name="DeleteCommand" />
     <RootPropertyPathName Name="SC" />
     <RootPropertyPathName Name="SelectedStudent" />
     <RootPropertyPathName Name="LastName" />
     <RootPropertyPathName Name="FirstName" />
     <RootPropertyPathName Name="Password" />
-    <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="Mail" />
     <RootPropertyPathName Name="TC" />
     <RootPropertyPathName Name="SelectedTeacher" />
@@ -40,8 +39,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
-      <RootProperty Name="MinWidth" />
       <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -62,6 +61,7 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Margin" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Margin" />
@@ -78,7 +78,6 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
-      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
@@ -100,25 +99,32 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="MinHeight" />
-      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="TextWrapping" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="MinHeight" />
       <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Command" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
@@ -128,11 +134,18 @@
       <RootProperty Name="Mode" />
       <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Background" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -142,8 +155,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Width" />
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
@@ -155,19 +168,17 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="MinHeight" />
-      <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
       <RootProperty Name="Width" />
       <RootProperty Name="Header" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="HelpList.View.HelpListStudent" />
     <RootType FullName="HelpList.View.HelpListTeacher" />
     <RootType FullName="HelpList.Model.ClassCollection" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Height" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Margin" />
-    </RootType>
     <RootType FullName="HelpList.View.HomePageAdmin" />
     <RootType FullName="HelpList.View.HomePageStudent" />
     <RootType FullName="HelpList.View.HomePageTeacher" />
@@ -177,6 +188,13 @@
       <RootProperty Name="Header" />
     </RootType>
     <RootType FullName="HelpList.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Items" />
+    </RootType>
     <RootType FullName="HelpList.Model.StudentCollection" />
     <RootType FullName="HelpList.Model.TeacherCollection" />
   </Roots.RootTypes>

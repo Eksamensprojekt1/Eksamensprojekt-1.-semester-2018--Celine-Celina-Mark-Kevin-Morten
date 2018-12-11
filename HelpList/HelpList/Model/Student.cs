@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq.Expressions;
-
-namespace HelpList.Model
+﻿namespace HelpList.Model
 {
     class Student : User
     {
@@ -15,10 +12,10 @@ namespace HelpList.Model
 
         }
 
-	    public void StudentLogin()
-	    {
-			
-	    }
-	}
+        public void StudentLogin()
+        {
 
+        }
+
+    }
 }

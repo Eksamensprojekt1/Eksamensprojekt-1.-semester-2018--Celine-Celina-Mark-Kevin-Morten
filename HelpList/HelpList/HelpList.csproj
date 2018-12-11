@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\classroom.jpg" />
+    <Content Include="Assets\HL-logo.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\logoHL-1.PNG" />
     <Content Include="Assets\logoHL-2.PNG" />

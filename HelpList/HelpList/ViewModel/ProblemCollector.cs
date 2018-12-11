@@ -13,15 +13,13 @@ namespace HelpList.ViewModel
         #region PropertyChangeSupport
         public event PropertyChangedEventHandler PropertyChanged;
 
-
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
 
-        #region Instance Field
-
+        //Instance Field
         private ObservableCollection<Problem> _problems;
         private string _name;
         private string _topic;
@@ -29,10 +27,9 @@ namespace HelpList.ViewModel
         private string _description;
         private DateTime _date;
         private Problem _selectedProblem;
-        #endregion
 
-        #region Constructor
 
+        //Constructor
         public ProblemCollector()
         {
             _problems = new ObservableCollection<Problem>();
@@ -44,9 +41,9 @@ namespace HelpList.ViewModel
             RemoveCommand = new RelayCommand(Remove);
             RemoveAllCommand = new RelayCommand(RemoveAll);
         }
-        #endregion
 
-        #region Property
+
+        //Property
 
         public ObservableCollection<Problem> Problems
         {
@@ -97,10 +94,9 @@ namespace HelpList.ViewModel
         public RelayCommand AddCommand { get; set; }
         public RelayCommand RemoveCommand { get; set; }
         public RelayCommand RemoveAllCommand { get; set; }
-        #endregion
 
-        #region Methods
 
+        //Methods
         public void Add()
         {
             _problems.Add(new Problem(Name, Topic, Location, Description));
@@ -115,12 +111,25 @@ namespace HelpList.ViewModel
                 OnPropertyChanged();
             }
         }
-
         public void RemoveAll()
         {
             _problems.Clear();
             OnPropertyChanged();
         }
-        #endregion
+
+        //public void RemoveJustOne()
+        //{
+        //    if (SelectedProblem != null)
+        //    {
+        //        if (Name==Name)
+        //        {
+        //            _problems.Remove(_selectedProblem);
+        //        OnPropertyChanged();
+        //        }
+
+        //    }
+        //}
+
+
     }
 }
