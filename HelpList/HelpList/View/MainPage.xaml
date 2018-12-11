@@ -17,34 +17,40 @@
                 HorizontalAlignment="Left"
                 Background="DarkBlue" />
             <!--  Logo  -->
-
-            <!--  Overskrift  -->
-            <Image
-                Grid.ColumnSpan="2"
-                Width="200"
-                Height="200"
-                Margin="0,50,0,0"
+            <TextBlock
+                Margin="385,16,384,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                Source="/Assets/HL-logo.png" />
+                FontSize="72"
+                Text="HelpList"
+                TextWrapping="Wrap" />
+            <!--  Overskrift  -->
+            <TextBlock
+                Width="129"
+                Margin="453,136,442,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="42"
+                Text="Login"
+                TextWrapping="Wrap" />
 
             <Grid
                 Grid.Column="0"
-                Margin="0,200,0,0"
-                HorizontalAlignment="Center"
+                Margin="360,273,358,43"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="39*" />
-                    <ColumnDefinition Width="161*" />
-                    <ColumnDefinition Width="154*" />
+                    <ColumnDefinition Width="167*" />
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="19*" />
                 </Grid.ColumnDefinitions>
 
 
                 <RelativePanel
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Margin="0,30,0,0"
-                    HorizontalAlignment="Center">
+                    Grid.ColumnSpan="3"
+                    Margin="30,-73,-19.6,73"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
                     <Interactivity:Interaction.Behaviors>
                         <Core:EventTriggerBehavior EventName="PointerPressed">
                             <Core:NavigateToPageAction />
@@ -53,14 +59,14 @@
                     <TextBox
                         x:Name="Email"
                         Width="250"
-                        Header="Username:"
-                        PlaceholderText="Indtast din skole email her..." />
+                        Header="Email:"
+                        Text="Indtast din skole email her..." />
 
                     <PasswordBox
                         x:Name="Code"
                         Width="250"
                         Margin="0,30,0,0"
-                        Header="Password:"
+                        Header="Adgangskode:"
                         RelativePanel.Below="Email" />
 
                     <Button
@@ -69,7 +75,7 @@
                         Height="34"
                         Margin="10,20,0,0"
                         Background="DarkBlue"
-                        Content="Log in as Student"
+                        Content="Log ind som Studerende"
                         Foreground="White"
                         RelativePanel.Below="Code">
                         <Interactivity:Interaction.Behaviors>
@@ -84,7 +90,7 @@
                         Height="34"
                         Margin="10,20,0,0"
                         Background="DarkRed"
-                        Content="Log in as Teacher"
+                        Content="Log ind som Lærer"
                         Foreground="White"
                         RelativePanel.Below="LoginStudent">
                         <Interactivity:Interaction.Behaviors>
@@ -99,7 +105,7 @@
                         Height="34"
                         Margin="10,20,0,0"
                         Background="White"
-                        Content="Log in as Admin"
+                        Content="Log ind som Admin"
                         Foreground="gray"
                         RelativePanel.Below="LoginTeacher">
                         <Interactivity:Interaction.Behaviors>

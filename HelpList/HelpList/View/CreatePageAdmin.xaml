@@ -28,10 +28,9 @@
                 </Interactivity:Interaction.Behaviors>
             </AppBarButton>
             <AppBarButton
-                Click="AppBarButton_Click"
                 Foreground="White"
                 Icon="List"
-                Label="list" />
+                Label="list" Click="AppBarButton_Click" />
             <AppBarButton
                 Foreground="White"
                 Icon="Add"
@@ -41,16 +40,7 @@
                 Foreground="White"
                 Icon="Message"
                 Label="comment" />
-            <AppBarButton
-                Foreground="White"
-                Icon="Undo"
-                Label="Log Out">
-                <Interactivity:Interaction.Behaviors>
-                    <Core:EventTriggerBehavior EventName="Click">
-                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage" />
-                    </Core:EventTriggerBehavior>
-                </Interactivity:Interaction.Behaviors>
-            </AppBarButton>
+
 
         </StackPanel>
         <Pivot Margin="70,0,0,0">

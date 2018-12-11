@@ -45,24 +45,23 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Undo"
-                Label="Log Out">
+                Label="Log Ud" >
                 <Interactivity:Interaction.Behaviors>
                     <Core:EventTriggerBehavior EventName="Click">
-                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage" />
+                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage"/>
                     </Core:EventTriggerBehavior>
                 </Interactivity:Interaction.Behaviors>
             </AppBarButton>
 
 
         </StackPanel>
-
-        <TextBlock
-            Margin="100,30,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            FontSize="24"
-            Text="Welcome Admin"
-            TextWrapping="Wrap" />
-
+        <Image Height="200" Source="/Assets/logoHL-5.PNG" Margin="0,0,0,440" />
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            FontSize="20" 
+            Text="Velkommen Admin" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" 
+            Margin="117,174,0,0"/>
     </Grid>
 </Page>

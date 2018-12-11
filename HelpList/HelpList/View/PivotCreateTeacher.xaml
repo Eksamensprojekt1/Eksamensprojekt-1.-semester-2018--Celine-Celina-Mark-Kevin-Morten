@@ -15,58 +15,51 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0" HorizontalAlignment="Center">
 
-            <RelativePanel
-                Grid.Row="0"
-                Grid.RowSpan="2"
-                Margin="0,50,0,0">
+            <RelativePanel>
                 <TextBox
                     x:Name="firstname"
                     Width="200"
-                    FontSize="20"
                     Header="Firstname"
                     Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBox
                     x:Name="Lastname"
                     Width="200"
-                    Margin="20,0,0,0"
-                    FontSize="20"
                     Header="Lastname"
-                    RelativePanel.RightOf="firstname"
+                    RelativePanel.Below="firstname"
                     Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-
                 <TextBox
                     x:Name="mail"
                     Width="200"
-                    FontSize="20"
-                    Header="Mail"
-                    RelativePanel.Below="firstname"
+                    Header="Email"
+                    RelativePanel.Below="Lastname"
+                    Text="{Binding Mail, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBox
+                    x:Name="username"
+                    Width="200"
+                    Header="Username"
+                    RelativePanel.Below="mail"
                     Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBox
                     x:Name="password"
                     Width="200"
-                    Margin="20,0,0,0"
-                    FontSize="20"
                     Header="Password"
-                    RelativePanel.Below="Lastname"
-                    RelativePanel.RightOf="mail"
+                    RelativePanel.Below="username"
                     Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <AppBarButton
                     x:Name="AppBarButton1"
-                    Margin="0,30,0,0"
                     Command="{Binding AddCommand, Mode=TwoWay}"
                     Foreground="DarkGreen"
                     Icon="Add"
-                    RelativePanel.Below="mail" />
+                    RelativePanel.Below="password" />
 
                 <AppBarButton
-                    Margin="0,30,0,0"
                     Command="{Binding DeleteCommand, Mode=TwoWay}"
                     Foreground="DarkRed"
                     Icon="delete"
@@ -76,44 +69,22 @@
             </RelativePanel>
         </Grid>
 
-        <TextBlock
-            Grid.Column="1"
-            Margin="0,30,0,0"
-            HorizontalAlignment="Center"
-            FontSize="24"
-            Text="Teachers" />
+
 
         <ListView
-            Grid.RowSpan="2"
             Grid.Column="1"
-            Margin="0,70,0,0"
             HorizontalAlignment="Center"
             ItemsSource="{Binding TC, Mode=TwoWay}"
             SelectedItem="{Binding SelectedTeacher, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderBrush="DarkBlue" BorderThickness="2">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*" />
-                                <ColumnDefinition Width="1*" />
-                            </Grid.ColumnDefinitions>
-                            <RelativePanel Width="240">
-                                <TextBlock
-                                    x:Name="firstname"
-                                    Margin="10,0,0,0"
-                                    FontSize="20"
-                                    Text="{Binding FirstName, Mode=OneWay}" />
-                                <TextBlock
-                                    x:Name="lastname"
-                                    Margin="5,0,10,0"
-                                    FontSize="20"
-                                    RelativePanel.RightOf="firstname"
-                                    Text="{Binding LastName, Mode=OneWay}" />
-                            </RelativePanel>
-                        </Grid>
+                    <RelativePanel>
+                        <TextBlock
+                            FontSize="20"
+                            Foreground="Black"
+                            Text="{Binding FirstName, Mode=OneWay}" />
 
-                    </Border>
+                    </RelativePanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
