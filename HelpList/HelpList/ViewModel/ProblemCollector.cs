@@ -21,59 +21,24 @@ namespace HelpList.ViewModel
 
         //Instance Field
         private ObservableCollection<Problem> _problems;
-        private string _name;
-        private string _topic;
-        private string _location;
-        private string _description;
         private DateTime _date;
-        private Problem _selectedProblem;
 
 
         //Constructor
         public ProblemCollector()
         {
-            _problems = new ObservableCollection<Problem>();
-            _selectedProblem = null;
 
-            _problems.Add(new Problem("Kevin", "Emne", "Klassen", "hvorfor virker det ikke :("));
+            MyHelpList = SingletonHelpList.Instance;
 
-            AddCommand = new RelayCommand(Add);
-            RemoveCommand = new RelayCommand(Remove);
-            RemoveAllCommand = new RelayCommand(RemoveAll);
+            AddCommand = new RelayCommand(MyHelpList.Add);
+            RemoveCommand = new RelayCommand(MyHelpList.Remove);
+            RemoveAllCommand = new RelayCommand(MyHelpList.RemoveAll);
         }
 
 
         //Property
-
-        public ObservableCollection<Problem> Problems
-        {
-            get { return _problems; }
-            set { _problems = value; }
-        }
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        public string Topic
-        {
-            get { return _topic; }
-            set { _topic = value; }
-        }
-
-        public string Location
-        {
-            get { return _location; }
-            set { _location = value; }
-        }
-
-        public string Description
-        {
-            get { return _description; }
-            set { _description = value; }
-        }
+        public SingletonHelpList MyHelpList { get; set; }
+        public Problem SelectedProblem { get; set; } = null;
 
         public DateTime Date
         {
@@ -81,41 +46,33 @@ namespace HelpList.ViewModel
             set { _date = value; }
         }
 
-        public Problem SelectedProblem
-        {
-            get { return _selectedProblem; }
-            set
-            {
-                _selectedProblem = value;
-                OnPropertyChanged();
-            }
-        }
 
         public RelayCommand AddCommand { get; set; }
         public RelayCommand RemoveCommand { get; set; }
         public RelayCommand RemoveAllCommand { get; set; }
 
 
-        //Methods
-        public void Add()
-        {
-            _problems.Add(new Problem(Name, Topic, Location, Description));
-            OnPropertyChanged();
-        }
+        #region Methods not used
 
-        public void Remove()
-        {
-            if (SelectedProblem != null)
-            {
-                _problems.Remove(_selectedProblem);
-                OnPropertyChanged();
-            }
-        }
-        public void RemoveAll()
-        {
-            _problems.Clear();
-            OnPropertyChanged();
-        }
+        //public void Add()
+        //{
+        //    _problems.Add(new Problem(Name, Topic, Location, Description));
+        //    OnPropertyChanged();
+        //}
+
+        //public void Remove()
+        //{
+        //    if (SelectedProblem != null)
+        //    {
+        //        _problems.Remove(_selectedProblem);
+        //        OnPropertyChanged();
+        //    }
+        //}
+        //public void RemoveAll()
+        //{
+        //    _problems.Clear();
+        //    OnPropertyChanged();
+        //}
 
         //public void RemoveJustOne()
         //{
@@ -130,6 +87,6 @@ namespace HelpList.ViewModel
         //    }
         //}
 
-
+        #endregion
     }
 }

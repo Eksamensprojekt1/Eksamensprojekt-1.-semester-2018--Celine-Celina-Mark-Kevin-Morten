@@ -59,6 +59,7 @@
                     <TextBlock Text="Pippi L." />
                     <TextBlock Text="Sonja O." />
                     <TextBlock Text="Lene E." />
+                
                 </ComboBox>
                 <ComboBox
                     x:Name="combo2"
