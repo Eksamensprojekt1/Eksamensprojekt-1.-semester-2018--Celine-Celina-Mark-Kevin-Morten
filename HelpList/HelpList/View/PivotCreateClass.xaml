@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
 
 
-        <Grid
+        <Grid 
             Grid.RowSpan="2"
             Grid.Column="0"
             Margin="0,50,0,0"
