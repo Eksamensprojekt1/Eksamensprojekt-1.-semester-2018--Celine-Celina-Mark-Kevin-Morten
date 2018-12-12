@@ -45,26 +45,6 @@
                     RelativePanel.Below="Classname"
                     Text="{Binding ClassRoom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                <Button
-                    x:Name="add"
-                    Width="100"
-                    Height="34"
-                    Margin="10"
-                    Background="DarkBlue"
-                    Command="{Binding AddCommand, Mode=TwoWay}"
-                    Content="Create"
-                    Foreground="White"
-                    RelativePanel.Below="combo1" />
-                <Button
-                    Width="100"
-                    Height="34"
-                    Margin="10"
-                    Background="DarkRed"
-                    Command="{Binding DeleteCommand, Mode=TwoWay}"
-                    Content="Delete"
-                    Foreground="White"
-                    RelativePanel.Below="combo1"
-                    RelativePanel.RightOf="add" />
                 <ComboBox
                     x:Name="combo1"
                     Width="240"
@@ -95,6 +75,27 @@
                     <TextBlock Text="Sonja O." />
                     <TextBlock Text="Lene E." />
                 </ComboBox>
+                <Button
+                    x:Name="add"
+                    Width="100"
+                    Height="34"
+                    Margin="10"
+                    Background="DarkBlue"
+                    Command="{Binding AddCommand, Mode=TwoWay}"
+                    Content="Create"
+                    Foreground="White"
+                    RelativePanel.Below="combo1" />
+                <Button
+                    Width="100"
+                    Height="34"
+                    Margin="10"
+                    Background="DarkRed"
+                    Command="{Binding DeleteCommand, Mode=TwoWay}"
+                    Content="Delete"
+                    Foreground="White"
+                    RelativePanel.Below="combo1"
+                    RelativePanel.RightOf="add" />
+
             </RelativePanel>
         </Grid>
 
