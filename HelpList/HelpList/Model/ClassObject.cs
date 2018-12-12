@@ -23,11 +23,17 @@
         {
             _className = className;
             _classRoom = classRoom;
+
+            //ObservableCollection<Student> ClassListStudent;
+            //ObservableCollection<Student> ClassListTeacher;
         }
         public ClassObject()
         {
-
+            //ObservableCollection<Student> ClassListStudent;
+            //ObservableCollection<Student> ClassListTeacher;
         }
+
+
         public override string ToString()
         {
             return $"{nameof(ClassName)}: {ClassName}, {nameof(ClassRoom)}: {ClassRoom}";
