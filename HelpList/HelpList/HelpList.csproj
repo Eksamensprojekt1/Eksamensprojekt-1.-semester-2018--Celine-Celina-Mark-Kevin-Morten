@@ -98,6 +98,7 @@
     <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Model\ClassCollection.cs" />
     <Compile Include="Model\ClassObject.cs" />
+    <Compile Include="Model\Forum.cs" />
     <Compile Include="Model\Problem.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\StudentClass.cs" />
@@ -105,10 +106,15 @@
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Model\TeacherCollection.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\Annotations1.cs" />
     <Compile Include="ViewModel\ClassList.cs" />
+    <Compile Include="ViewModel\ForumSite.cs" />
     <Compile Include="ViewModel\ProblemCollector.cs" />
     <Compile Include="View\CreatePageAdmin.xaml.cs">
       <DependentUpon>CreatePageAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ForumPageStudent.xaml.cs">
+      <DependentUpon>ForumPageStudent.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\HelpListStudent.xaml.cs">
       <DependentUpon>HelpListStudent.xaml</DependentUpon>
@@ -148,11 +154,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\classroom.jpg" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\logoHL-1.PNG" />
     <Content Include="Assets\logoHL-2.PNG" />
     <Content Include="Assets\logoHL-3.PNG" />
     <Content Include="Assets\logoHL-4.PNG" />
     <Content Include="Assets\logoHL-5.PNG" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +174,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="View\CreatePageAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ForumPageStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -202,6 +219,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AWSSDK">
+      <Version>2.3.55.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.7</Version>
     </PackageReference>

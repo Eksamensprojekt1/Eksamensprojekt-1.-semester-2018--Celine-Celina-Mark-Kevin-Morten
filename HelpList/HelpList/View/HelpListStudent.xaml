@@ -113,7 +113,7 @@
                     TextWrapping="Wrap"
                     Text="{Binding Description, Mode=TwoWay}"/>
             </StackPanel>
-                       
+
             <Button 
                 x:Name="AddProblem"
                 Grid.Row="4"
@@ -124,7 +124,7 @@
                 Content="Add Problem"
                 Command="{Binding AddCommand}">
             </Button>
-            
+
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="2" Margin="10,0,10,0">
@@ -132,9 +132,9 @@
                 x:Name="HelpListView"
                 ItemsSource="{Binding Problems}"
                 SelectedItem="{Binding SelectedProblem, Mode=TwoWay}"
-                SelectionChanged="HelpListView_OnSelectionChanged">                
+                SelectionChanged="HelpListView_OnSelectionChanged">
                 <ListView.ItemTemplate>
-                    <DataTemplate>                                                
+                    <DataTemplate>
                         <StackPanel Margin="0,0,0,10">
                             <StackPanel>
                                 <TextBlock Text="{Binding Date, Mode=OneWay}"/>
@@ -148,7 +148,7 @@
                                 <StackPanel>
                                     <TextBlock Text="{Binding Name, Mode=OneWay}"/>
                                     <TextBlock Text="{Binding Topic, Mode=OneWay}"/>
-                                    <TextBlock Text="{Binding Location, Mode=OneWay}"/>                                    
+                                    <TextBlock Text="{Binding Location, Mode=OneWay}"/>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>
@@ -158,6 +158,11 @@
         </Grid>
 
         <Grid Grid.Column="3" Grid.Row="1" Margin="10,0,10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="113*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="2*"/>
@@ -165,7 +170,7 @@
 
             <StackPanel
                 Grid.Row="0"
-                x:Name="HelpListExtendedView"
+                x:Name="HelpListExtendedView" Grid.ColumnSpan="3" Margin="0,0,-0.4,0"
                 >
                 <TextBlock 
                     x:Name="DateBlock"
@@ -202,7 +207,7 @@
                 </StackPanel>
             </StackPanel>
 
-            
+
         </Grid>
 
     </Grid>
