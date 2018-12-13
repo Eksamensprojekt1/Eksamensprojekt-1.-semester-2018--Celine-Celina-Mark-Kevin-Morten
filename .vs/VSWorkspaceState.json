@@ -5,6 +5,6 @@
     "\\HelpList\\HelpList",
     "\\HelpList\\HelpList\\View"
   ],
-  "SelectedNode": "\\HelpList\\HelpList\\View\\PivotCreateClass.xaml",
+  "SelectedNode": "\\HelpList\\HelpList\\ViewModel",
   "PreviewInSolutionExplorer": false
 }
