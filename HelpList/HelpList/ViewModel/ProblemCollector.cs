@@ -25,6 +25,7 @@ namespace HelpList.ViewModel
         #endregion
 
         #region Constructor
+        //blabla
         public ProblemCollector()
         {
 
