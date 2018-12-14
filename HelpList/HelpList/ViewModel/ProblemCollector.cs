@@ -19,12 +19,12 @@ namespace HelpList.ViewModel
         }
         #endregion
 
-        //Instance Field
+        #region Instance Field
         private ObservableCollection<Problem> _problems;
         private DateTime _date;
+        #endregion
 
-
-        //Constructor
+        #region Constructor
         public ProblemCollector()
         {
 
@@ -34,9 +34,9 @@ namespace HelpList.ViewModel
             RemoveCommand = new RelayCommand(MyHelpList.Remove);
             RemoveAllCommand = new RelayCommand(MyHelpList.RemoveAll);
         }
+        #endregion
 
-
-        //Property
+        #region Property
         public SingletonHelpList MyHelpList { get; set; }
         public Problem SelectedProblem { get; set; } = null;
 
@@ -46,11 +46,10 @@ namespace HelpList.ViewModel
             set { _date = value; }
         }
 
-
         public RelayCommand AddCommand { get; set; }
         public RelayCommand RemoveCommand { get; set; }
         public RelayCommand RemoveAllCommand { get; set; }
-
+        #endregion
 
         #region Methods not used
 
@@ -88,5 +87,6 @@ namespace HelpList.ViewModel
         //}
 
         #endregion
+
     }
 }

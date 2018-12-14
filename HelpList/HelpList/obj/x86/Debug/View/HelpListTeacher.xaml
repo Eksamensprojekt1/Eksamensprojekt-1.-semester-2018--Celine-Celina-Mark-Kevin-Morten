@@ -26,7 +26,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
-            <RowDefinition Height="8*" />
+            <RowDefinition Height="7*" />
         </Grid.RowDefinitions>
 
         <StackPanel
@@ -73,7 +73,7 @@
         <Image
             Grid.ColumnSpan="4"
             Height="200"
-            Margin="0,-60,0,0"
+            Margin="0,-50,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Source="/Assets/HL-logo.png" />
@@ -140,7 +140,7 @@
                 Margin="0,-30,0,20"
                 HorizontalAlignment="Right"
                 Command="{Binding AddCommand}"
-                Content="Add Problem" />
+                Content="Add Problem"                          />
 
         </Grid>
 

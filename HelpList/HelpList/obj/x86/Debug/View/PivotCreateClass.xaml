@@ -50,7 +50,7 @@
                     Width="240"
                     Height="Auto"
                     Margin="0,20,0,0"
-                    PlaceholderText="Select Students"
+                    Header="Select Students"
                     RelativePanel.Below="combo2">
 
                     <TextBlock Text="Bob B." />
@@ -59,22 +59,23 @@
                     <TextBlock Text="Pippi L." />
                     <TextBlock Text="Sonja O." />
                     <TextBlock Text="Lene E." />
-                
+
                 </ComboBox>
                 <ComboBox x:ConnectionId='4'
                     x:Name="combo2"
                     Width="240"
                     Height="Auto"
                     Margin="0,20,0,0"
-                    PlaceholderText="Select Teachers"
-                    RelativePanel.Below="Classroom">
+                    Header="Select Teachers"
+                    RelativePanel.Below="Classroom"
+                    ItemsSource="{Binding SingletonHelpList.FistName}">
 
-                    <TextBlock Text="Bob B." />
+                    <!--<TextBlock Text="Bob B." />
                     <TextBlock Text="Jens J." />
                     <TextBlock Text="Harry P." />
                     <TextBlock Text="Pippi L." />
                     <TextBlock Text="Sonja O." />
-                    <TextBlock Text="Lene E." />
+                    <TextBlock Text="Lene E." />-->
                 </ComboBox>
                 <Button x:ConnectionId='5'
                     x:Name="add"

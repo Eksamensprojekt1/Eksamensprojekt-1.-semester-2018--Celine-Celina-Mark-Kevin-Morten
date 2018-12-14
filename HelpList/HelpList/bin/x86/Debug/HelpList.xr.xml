@@ -16,6 +16,8 @@
     <RootPropertyPathName Name="ClassRoom" />
     <RootPropertyPathName Name="ClassName" />
     <RootPropertyPathName Name="DeleteCommand" />
+    <RootPropertyPathName Name="SingletonHelpList" />
+    <RootPropertyPathName Name="FistName" />
     <RootPropertyPathName Name="SC" />
     <RootPropertyPathName Name="SelectedStudent" />
     <RootPropertyPathName Name="LastName" />
@@ -129,6 +131,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
@@ -192,8 +195,9 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Header" />
       <RootProperty Name="Items" />
+      <RootProperty Name="ItemsSource" />
     </RootType>
     <RootType FullName="HelpList.Model.StudentCollection" />
     <RootType FullName="HelpList.Model.TeacherCollection" />
