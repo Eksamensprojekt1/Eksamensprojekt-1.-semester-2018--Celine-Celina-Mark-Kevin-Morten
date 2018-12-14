@@ -29,6 +29,15 @@ namespace HelpList.Model
             _description = description;
             _date = DateTime.Now;
         }
+
+        public Problem(string name, string topic , string description)
+        {
+            _name = name;
+            _topic = topic;
+            _description = description;
+            _date = DateTime.Now;
+        }
+
         #endregion
 
         #region Property

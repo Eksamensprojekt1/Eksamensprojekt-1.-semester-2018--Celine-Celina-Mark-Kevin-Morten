@@ -41,8 +41,14 @@
                 Label="comment" />
             <AppBarButton
                 Foreground="White"
-                Icon="Find"
-                Label="Search" />
+                Icon="Folder"
+                Label="Saved Problems" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.ProblemFolder"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
 
         </StackPanel>
         <!-- ../ Menu slut -->
@@ -134,7 +140,21 @@
                     Background="DarkBlue"
                     Content="Gemte opgaver"
                     Foreground="White"
-                    FontSize="17"/>
+                    FontSize="17"
+                    >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.ProblemFolder"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+
+
+
+
+
+
+
+            </Button>
         </Grid>
 
     </Grid>

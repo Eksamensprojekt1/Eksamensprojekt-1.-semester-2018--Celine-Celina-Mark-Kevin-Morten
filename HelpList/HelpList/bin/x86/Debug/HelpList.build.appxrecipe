@@ -460,6 +460,9 @@
     <AppxPackagedFile Include="C:\Users\Morte\Source\Repos\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten2\HelpList\HelpList\bin\x86\Debug\View\PivotCreateTeacher.xbf">
       <PackagePath>View\PivotCreateTeacher.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Morte\Source\Repos\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten2\HelpList\HelpList\bin\x86\Debug\View\ProblemFolder.xbf">
+      <PackagePath>View\ProblemFolder.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

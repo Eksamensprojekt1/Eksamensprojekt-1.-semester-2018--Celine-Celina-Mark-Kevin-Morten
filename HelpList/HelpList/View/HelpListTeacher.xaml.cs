@@ -40,5 +40,10 @@ namespace HelpList.View
 				HelpListExtendedView.Visibility = Visibility.Collapsed;
 			}
 		}
-	}
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

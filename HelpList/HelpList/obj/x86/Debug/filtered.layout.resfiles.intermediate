@@ -24,4 +24,5 @@ View\MainPage.xbf
 View\PivotCreateClass.xbf
 View\PivotCreateStudent.xbf
 View\PivotCreateTeacher.xbf
+View\ProblemFolder.xbf
 Properties\Default.rd.xml
