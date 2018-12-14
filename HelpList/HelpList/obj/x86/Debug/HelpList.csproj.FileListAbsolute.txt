@@ -1008,3 +1008,15 @@ C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Cel
 C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Mark\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\HelpList.csprojAssemblyReference.cache
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Newtonsoft.Json.pdb
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\System.Console.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\Mark\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw

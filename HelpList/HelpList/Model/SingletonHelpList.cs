@@ -18,7 +18,6 @@ namespace HelpList.Model
         #endregion
 
         #region Property
-
         public static SingletonHelpList Instance
         {
             get { return _instance ?? (_instance = new SingletonHelpList()); }
